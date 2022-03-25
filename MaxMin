@@ -22,3 +22,4 @@ class main{
 			}
 			System.out.println("Maximum element in array:"+max);
       }
+}
