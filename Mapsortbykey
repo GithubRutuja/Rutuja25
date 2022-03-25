@@ -1,0 +1,25 @@
+
+// Code to sort Map by key value
+import java.util.*;
+class sortmapKey {
+    static Map<String, String> map = new HashMap<>();
+    public static void sortbykey()
+    {
+        ArrayList<String> sortedKeys = new ArrayList<String>(map.keySet()); 
+        Collections.sort(sortedKeys);
+        // Display the TreeMap which is naturally sorted
+
+        for (String x : sortedKeys)
+            System.out.println("Key = " + x
+                             + ", Value = " + map.get(x));
+    }
+    public static void main(String args[])
+    {
+        map.put("abc", "hi");
+        map.put("lmo", "welcome");
+        map.put("xyz", "github");
+        map.put("pqr", "to");
+        map.put("efg", "hello");
+        sortbykey();
+    }
+}
